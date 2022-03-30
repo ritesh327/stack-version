@@ -200,7 +200,7 @@ section:hover{
 .col {
     margin-left: 10px;
     margin-right: 10px;
-    height: 70vh;
+    
 }
 .coltext{
     width: 20vw;
@@ -215,13 +215,49 @@ section:hover{
 }
 .bg-link{
     margin: 0 0;
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
 }
-
-
-
-
-
-
+.text-lg{
+    
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    
+}
+.container-part{
+    background-color: whitesmoke;
+    height: 80vh;
+    padding-top: 10vw;
     
     
-
+}
+.h5{
+    text-align: center;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    color:black;
+}
+.partner{
+    padding-top: 7vw;
+    margin-left: 15vw;
+    margin-right: 10vw;
+    margin-bottom: 10vw;
+}
+.partner img{
+    
+    width: 10vw;
+    padding: 15px;
+}
+.row-buy{
+    margin-top: 30vw;
+    background-color: rgb(92, 8, 92);
+    width: 100VW;
+    height: 80vh;
+    text-align: center;
+    padding-top: 10px;
+}
+.buy-text{
+    margin-top: 20px;
+    padding-top: 10px;
+}
