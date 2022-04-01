@@ -7,6 +7,7 @@
     <title>project</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 </head>
 <body>
     <div class="header">
@@ -187,33 +188,36 @@
                 </div>
                 
 
-                <bdo class="carousel" data-flickity='{ "autoPlay": true }'>
-  <div class="carousel-cell"> 
-      <span>
-        “I've been using Medium Rare's templates for a couple of years now and Stack is without a doubt their best work yet. It's fast, performant and absolutely stunning.”
-      </span>
-      <h2>Lucas Nguyen</h2>
-      <p>Freelance Designer</p>
-      <img src="avatar-round-4.png" alt="">
-  </div>
-  <div class="carousel-cell">
-      <span>
-        “Variant has been a massive plus for my workflow — I can now get live mockups out in a matter of hours, my clients really love it.”
+                <div class="main-carousel">
+                    <div class="carousel-cell"> 
+                        <span>
+                          “I've been using Medium Rare's templates for a couple of years now and Stack is without a doubt their best work yet. It's fast, performant and absolutely stunning.”
+                        </span>
+                        <h2>Lucas Nguyen</h2>
+                        <p>Freelance Designer</p>
+                        <img src="avatar-round-4.png" alt="">
+                    </div>
+                    <div class="carousel-cell">
+                        <span>
+                          “Variant has been a massive plus for my workflow — I can now get live mockups out in a matter of hours, my clients really love it.”
+                  
+                        </span>
+                        <h2>Rob Vasquez</h2>
+                        <p>Interface Designer - Yoke</p>
+                        <img src="avatar-round-3.png" alt="">
+                    </div>
+                    <div class="carousel-cell">
+                        <span>
+                          “We’ve been using Stack to prototype designs quickly and efficiently. Needless to say we’re hugely impressed by the style and value.”
+                                                                  
+                        </span>
+                        <h2>Maguerite Designer </h2>
+                        <p>Interface Designer- Yoke</p>
+                        <img src="avatar-round-1.png" alt="">
+                    </div>
 
-      </span>
-      <h2>Rob Vasquez</h2>
-      <p>Interface Designer - Yoke</p>
-      <img src="avatar-round-3.png" alt="">
-  </div>
-  <div class="carousel-cell">
-      <span>
-        “We’ve been using Stack to prototype designs quickly and efficiently. Needless to say we’re hugely impressed by the style and value.”
-                                                
-      </span>
-      <h2>Maguerite Designer </h2>
-      <p>Interface Designer- Yoke</p>
-      <img src="avatar-round-4.png" alt="">
-  </div>
+                </div>
+ 
 
 
   <div class="row-buy">
@@ -223,9 +227,22 @@
           <button class="btn">Purchase ON ENVATO</button>
       </div>
       
+      
   </div>
   
     
 <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script type="text/javascript">
+        $('.main-carousel').flickity({
+            // options
+            contain: true
+        });
+    </script>
+
 </body>
 </html>
