@@ -5,11 +5,57 @@
     margin: 0;
     padding: 0;
 }
-body{
-    background-color: whitesmoke;
+
+*, *::before, *::after {
     box-sizing: border-box;
 }
-.header{
+
+body{
+    /*background-color: whitesmoke;*/
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+.flex {
+    display: flex;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.justify-content-around {
+    justify-content: space-around !important;
+}
+
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.col-half-width {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+.col-three {
+    flex: 0 0 25%;
+    max-width: 25%;
+} 
+
+
+section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.header {
     overflow: hidden;
     background-color: black;
     display: flex;
@@ -53,33 +99,39 @@ body{
 .row img{
     width: 20px;
 }
+
 .right a{
     text-decoration: none;
     color: grey;
     padding: 10px;
 }
-.right i{
+
+.right i {
     color: gray;
 }
+
 /*styling nav bar*/
+
 nav{
-    background-color: whitesmoke;
+    /*background-color: whitesmoke;*/
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-left: 6vw;
+    /*margin-left: 6vw;*/
     font-size: 10px;
-    padding: 3px;
-    margin-right: 6vw;
+    /*padding: 3px;*/
+    /*margin-right: 6vw;*/
 }
+
 nav .logo img{
     width: 60px;
 }
+
 nav a{
     text-decoration: none;
-    color: grey;
-    
+    color: grey;    
 }
+
 nav a:hover{
     color: black;
 
@@ -115,16 +167,35 @@ nav a:hover{
     background-color:rgb(27, 27, 172);
     border: 1px solid black;
 }
+
+
+.primary-bg {
+    background: #fafafa;
+}
+
+.container{
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+
 /*stying banner*/
 .banner{
-    margin-left: 10vw;
+    
+    /*margin-left: 10vw;*/
+
 }
-.flex{
-    display: flex;
+
+.banner-img {
+    margin-top: 100px;
 }
+
 .banner-text{
     align-self: center;
 }
+
 .banner-text_heading {
     color: #252525;
     font-size: 42px;
@@ -151,20 +222,20 @@ nav a:hover{
     text-decoration: none;
     color: white;
 }
-.container{
+/*.container{
     background-color:white;
     margin-top: 30px;
     margin-top: 10vw;
     margin-bottom: 10vw;
     height: 90vh;
 
-}
+}*/
 .flex-two{
     display: flex;
     flex-wrap: wrap;
     
 }
-section{
+/*section{
     width: 30vw;
     height: 25vh;
     border: 1px gray solid;
@@ -173,29 +244,32 @@ section{
     margin-left: 9vw;
     padding: 20px;
     font-family: 'Baloo Bhaijaan 2', cursive;
-    display: flex;
-    
-
+    display: flex;    
 }
+
+
 section:hover{
     background-color:whitesmoke;
 }
-  section i{
+
+section i{
     font-size: 5vw;
     
 }
- section .section-text{
+
+section .section-text{
     justify-items: space-between;
     float: right;
 
 }
+
 .icon{
     float: left;
 }
 .section-text{
     float: right;
     margin-left: 20px;
-}
+}*/
 
 .col {
     margin-left: 10px;
@@ -260,4 +334,62 @@ section:hover{
 .buy-text{
     margin-top: 20px;
     padding-top: 10px;
+}
+
+
+
+
+
+
+.feature {
+    border: 1px solid #ececec;
+    padding: 20px;
+    color: #252525;
+    border-radius: 6px;
+    margin-bottom: 30px;
+}
+
+.feature-icon {
+    padding-right: 20px;
+}
+
+
+.feature-icon i {
+    font-size: 60px;
+}
+
+
+.feature-content__link {
+    color: #4a90e2;
+    text-decoration: none;    
+    display: inline-block;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+
+.feature-large h3{
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+
+
+.feature-large__text {
+    line-height: 1.6;
+    font-size: 21px;
+}
+
+.feature-large__img {
+    border-radius: 6px;
+    box-shadow: 0 23px 40px rgb(0 0 0 / 20%);
+}
+
+hr.short {
+    width: 100px;
+    border-color: #4a90e2;
+}
+
+.feature-large_last .feature-large__text {
+    font-size: 18px;
+    margin-top: 55px;
 }
